@@ -11,10 +11,27 @@
         <p>
             <label for="est">Estado:</label>
             <select name="Estados" id="est">
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="SP">São paulo</option>
-                <option value="MG">Minas Gerais</option>
+                <optgroup label="Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
             </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <datalist>
+                <option value="ADS">Analise e Desenvolvimento de Sistemas</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
         </p>
     </form>
 </body>

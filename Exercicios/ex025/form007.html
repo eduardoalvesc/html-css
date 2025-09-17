@@ -25,9 +25,15 @@
         </p>
         <p>
             <label for="iprof">Profissão:</label>
-            <datalist>
-                <option value="ADS">Analise e Desenvolvimento de Sistemas</option>
+            <input type="text" name="eprof" id="iprof" list="listpro">
+            <datalist id="listpro">
+                <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+                <option value="ADM">Adiministrador</option>
             </datalist>
+        </p>
+        <p>
+            <label for="msg">Mensagem:</label> <br>
+            <textarea name="Mensagem" id="msg" cols="30" rows="10"></textarea>
         </p>
         <p>
             <input type="submit" value="Enviar">

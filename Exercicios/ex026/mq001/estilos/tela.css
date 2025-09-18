@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color:bisque;
+}
+h1 {
+    text-align: center;
+}
+menu ul {
+    background-color: antiquewhite;
+}
+menu  li {
+    display: inline-block;
+    list-style-type: none;
+}
+main {
+    margin-top: 20px;
+}
+h2 {
+    margin-bottom: 10px;
+}
+article {
+    width: 600px; 
+    display: block;
+    margin: auto;
+}

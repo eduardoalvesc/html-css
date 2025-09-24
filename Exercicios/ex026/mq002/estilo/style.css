@@ -6,9 +6,20 @@
     html, body {
         width: 100vw;
         height: 100vh;
+        background-color: #233eff;
         background-size: contain;
         background-repeat: no-repeat;
     }
-    body {
-        background-color: #233eff;
+    
+    @media screen and (orientation: portrait) {
+        body{
+            background-image: url(../imagens/cev-portrait.jpg);
+            background-position: center bottom;
+        }
+    }
+    @media screen and (orientation: landscape) {
+        body{
+            background-image: url(../imagens/cev-landscape.jpg);
+            background-position: left bottom;
+        }
     }

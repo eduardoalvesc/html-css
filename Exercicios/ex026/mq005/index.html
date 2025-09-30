@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilo/style.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Site</h1>
-        <menu>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu ()">
+            menu
+        </span>
+        <menu id="aba">
             <ul>
                 <li><a href="#">opção 1</a></li>
                 <li><a href="#">opção 2</a></li>
                 <li><a href="#">opção 3</a></li>
+                <li><a href="#">opção 4</a></li>
             </ul>
         </menu>
     </header>
@@ -25,5 +30,23 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sit porro impedit delectus, distinctio, adipisci quod aliquam, dignissimos accusantium blanditiis sunt. Reiciendis architecto repudiandae, nihil totam cum accusamus inventore tempore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi aliquam recusandae repellendus a accusantium! Praesentium inventore enim voluptas placeat sint corrupti, fuga pariatur! Vitae incidunt esse omnis dicta dignissimos quos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint cupiditate, architecto incidunt voluptate numquam itaque. Necessitatibus id, itaque, a porro, hic molestias dolor quod at odit laborum ipsum ullam quasi!</p>
             </article>
         </main>
+        <script>
+
+            function mudouTamanho()
+                if (window.innerWidth >= 768 ) {
+                    aba.style.display = 'block'
+                } else {
+                    aba.style.display = 'none'
+                }
+
+            function clickMenu() {
+                if (aba.style.display =='block') {
+                    aba.style.display = 'none'
+                }
+                else {
+                        aba.style.display = 'block'
+                    }
+            }
+        </script>
 </body>
 </html>

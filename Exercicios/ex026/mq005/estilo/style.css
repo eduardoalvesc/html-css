@@ -15,8 +15,18 @@ header {
 header h1 {
     text-align: center;
 }
-menu {
+span#burger {
+    background-color: antiquewhite;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burger:hover {
+    background-color: burlywood;
+}
+menu {
+    display: none;
     text-align: center;
     background-color: antiquewhite;
 }
@@ -50,4 +60,18 @@ article > h2 {
 }
 article > p {
     margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+    span#burger {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display: inline-block; 
+    }
+    main {
+        width: 768px;
+    }
 }

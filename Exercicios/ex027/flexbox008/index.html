@@ -6,23 +6,44 @@
     <title>Document</title>
     <style>
         .conteiner {
+            background-color: bisque;
             display: flex;
+            height: 300px;
+            align-items: flex-start;
         }
         .itens {
             background-color: coral;
             border: 1px solid rgba(0, 0, 0, 0.192);
-            flex: auto;
+            padding: 20px;
+        }
+        #n1{
+            align-self: flex-end;
+        }
+        #n2{
+            align-self: center;
+        }
+        #n3{
+            align-self: stretch;
+        }
+        #n4{
+            
+        }
+        #n5{
+            align-self: center;
+        }
+        #n6{
+            align-self: flex-end;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="itens">1</div>
-        <div class="itens">2</div>
-        <div class="itens">3</div>
-        <div class="itens">4</div>
-        <div class="itens">5</div>
-        <div class="itens">6</div>
+        <div class="itens" id="n1">1</div>
+        <div class="itens" id="n2">2</div>
+        <div class="itens" id="n3">3</div>
+        <div class="itens" id="n4">4</div>
+        <div class="itens" id="n5">5</div>
+        <div class="itens" id="n6">6</div>
     </div>
 </body>
 </html>

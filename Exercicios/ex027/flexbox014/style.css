@@ -1,0 +1,28 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header, section#normal {
+    padding: 20px;
+}
+section#container{
+    background-color: lightgray;
+    display: flex;
+    flex-flow: column;
+}
+article.textmedia {
+    display: flex;
+    flex-flow: row wrap;
+}
+article.mediatext {
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+article > div.text {
+    flex: 1 1 500px;
+}
+article > div.media {
+    flex: 1 0 400px;
+}
